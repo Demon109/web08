@@ -12,12 +12,12 @@
 				font-family: "微软雅黑";
 			}
 			#shang{
-			height:172px;
+			height:167px;
 			}
 			#shangshang{
 			margin: 0 auto;
 			width:1200px;
-			height:172px;
+			height:167px;
 			}
 			#shang1{
 				font-size: 14.78px;
@@ -32,36 +32,52 @@
 				margin-left: 9px;
 				margin-right: 9px;
 			}
-			#shang2{
-				margin-top: 26px;
-				margin-left: 26px;
+			#shang2>select{
+				float: left;
+				margin-top: 105px;
+				margin-left: -1000px;
 				font-weight: bold;
+				border:0px;
+				font-family: "微软雅黑";
+				font-size: 14.78px;
 			}
 			#shang3{
 				margin-left: 40px;
 			}
 			#shang3>ul{
-				margin-top: -41px;
+				float: left;
+				margin-top: -43px;
 				margin-left: 81px;
 			}
 			#shang3>ul>li{
 				display: inline-block;
 				list-style: none;
-				margin-left: 46px;
-				padding: 0px 10px 5px 10px;
+				margin-left: 35px;
+				padding: 0px 16px 8px 16px;
 				margin-top: 22px;
 			}
 			#shang3>ul>li:hover{
 				border-bottom: 3px solid #3aa747;
 				color: #3aa747;
 			}
+			#search{
+				float: left;
+				border-left: 1px solid #cccccc;
+				height: 37px;
+				width: 65px;
+				padding-top: 5px;
+				text-align: center;
+				margin-top: 30px;
+				margin-left: -65px;
+			}
 			#zhong{
-			height:1540px;
+			height:1670px;
 			}
 			#daohang{
 				height: 460px;
 				width: 70px;
 				position: fixed;
+				top: 172px;
 				right: 0px;
 				background-color:#111613 ;
 				padding-top: 13px;
@@ -81,12 +97,13 @@
 				padding-top: 26px;
 			}
 			#zhongzhong1{
-				width: 1518px;
-				height: 550px;
+				height: 670px;
 				background-repeat: no-repeat;
 				margin: 0 auto;
 				background-image: url("./所需小图/banner.png");
-				background-size: 1518px ;
+				border-top: 5px solid #3aa747;
+				border-bottom: 2px solid #7f7f7f;
+				background-position: center;
 			}
 			#zhongzhong2{
 				margin: 0 auto;
@@ -274,7 +291,8 @@
 				float: left;
 				color: white;
 				text-align: center;
-				line-height: 25px;
+				padding-top: 2px;
+				line-height: 23px;
 			}
 			#hei:hover{
 				height: 185px;
@@ -343,21 +361,30 @@
 	<body>
 		<div id="shang">
 			<div id="shangshang">
+				<form>
 				<div id="shang1">
 					嘿，欢迎来买猜商城！ &nbsp;&nbsp;&nbsp;
 					<span1>请登录 &nbsp;&nbsp;&nbsp;免费注册 &nbsp;&nbsp;&nbsp;</span1>     
-					我的订单<span2>▼</span2>
-					我的买猜<span2>▼</span2>
+					<select name="dingnan"style="border:0px;font-size: 14.78px;font-family: "微软雅黑";">
+						<option value="one"selected>我的订单</option>
+					</select>
+					<select name="maicai"style="border:0px;font-size: 14.78px;font-family: "微软雅黑";">
+						<option value="one"selected>我的买猜</option>
+					</select>
 					帮助中心
 					<img src="./所需小图/wb.png"alt="正在加载中，客官不要着急呦"style="margin-left: 22px;margin-right: 5px;">
 					<img src="./所需小图/wx.png"alt="正在加载中，客官不要着急呦">
 				</div>
 				<img src="./所需小图/logo.png"alt="正在加载中，客官不要着急呦"style="margin-top: 41px;float:left;">
 				<input type="text"value="请输入内容" style="margin-left: 168px;width:615px;height:40px;margin-top: 30px;float:left;text-align:center;color:#ededed;">
-				<img src="./所需小图/search.png"alt="正在加载中，客官不要着急呦"style="margin-left: -52px;margin-top: 66px;">
-				<img src="./所需小图/cart.png"alt="正在加载中，客官不要着急呦"style="margin-top: -35px;float:right;">
+				<div id="search">
+					<img src="./所需小图/search.png"alt="正在加载中，客官不要着急呦">
+				</div>
+				<img src="./所需小图/cart.png"alt="正在加载中，客官不要着急呦"style="margin-top: 35px;float:right;">
 				<div id="shang2">
-					全部商品分类<span2>▼</span2>
+					<select name="quanbu">
+						<option value="one"selected>全部商品分类</option>
+					</select>
 				</div>
 				<div id="shang3">
 					<ul>
@@ -372,6 +399,7 @@
 						<li>抽奖游戏</li>
 					</ul>
 				</div>
+			</form>
 			</div>
 		</div>
 		<div id="zhong">
